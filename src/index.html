@@ -12,6 +12,21 @@
   <script src="https://unpkg.com/react@18.2.0/umd/react.development.js"></script>
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
 
+  <script>
+    const App = () => {
+      return React.createElement(
+        'div',
+        {}, // this object here can be whatever attributes you want to pass to the element
+        [
+        React.createElement('h1', {}, 'Adopt Me!'),
+        React.createElement('h2', {}, 'Welcome to Adopt Me!')
+      ]);
+    };
 
+    const container = document.getElementById('root');
+    const root = ReactDOM.createRoot(container);
+
+    root.render(React.createElement(App)); // this is the same as ReactDOM.render(<App />, container);
+  </script>
 </body>
 </html>
