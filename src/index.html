@@ -13,6 +13,9 @@
   <script src="https://unpkg.com/react-dom@18.2.0/umd/react-dom.development.js"></script>
 
   <script>
+    // simple overview of how React.createElement works
+    // but we will use JSX instead of React.createElement
+    // Here is what React.createElement does under the hood
     const App = () => {
       return React.createElement(
         'div',
@@ -27,6 +30,8 @@
     const root = ReactDOM.createRoot(container);
 
     root.render(React.createElement(App)); // this is the same as ReactDOM.render(<App />, container);
+    // This will render the App component inside the container element
+    // which is the div with the id of root
   </script>
 </body>
 </html>
