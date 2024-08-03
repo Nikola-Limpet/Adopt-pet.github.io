@@ -4,17 +4,21 @@
 // and then render it to the DOM using ReactDOM.createRoot
 import React from "react";
 import { createRoot } from "react-dom";
-import { Pet } from "./Pet";  // import the Pet component
+import Pet from "./Pet";  // import the Pet component
 
 
 const App = () => {
-  <div>
-    <h1> Adopt Me!</h1>
-    <Pet name="Chimmie" animal="Dog" breed="Pomeranian" />
-    <Pet name="Lolen" animal="Lion" breed="African" />
-    <Pet name="Poki" animal="Donkey" breed="American" />
-  </div>
+  return (
+    <div>
+      <h1>Adopt Me!</h1>
+      <Pet name="Chimmie" animal="Dog" breed="Pomeranian" />
+      <Pet name="Lolen" animal="Lion" breed="African" />
+      <Pet name="Poki" animal="Donkey" breed="American" />
+    </div>
+  );
 }
 const container = document.getElementById("root");
 const root = createRoot(container);
 root.render(<App /> );
+
+
