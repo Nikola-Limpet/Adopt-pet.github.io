@@ -2,14 +2,16 @@
 // Import the React and ReactDOM libraries
 // this is just a simple example of how to create a component using React.createElement
 // and then render it to the DOM using ReactDOM.createRoot
+import React from "react";
+import ReactDOM from "react-dom"
 
-const Pet = (props) => {
+function Pet(props) {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, props.name), // name
     React.createElement("h2", {}, props.animal), // animal
     React.createElement("h2", {}, props.breed), // breed,
   ]);
-};
+}
 
 const App = () => {
   return React.createElement("div", {}, [
