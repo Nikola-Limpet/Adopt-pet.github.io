@@ -1,3 +1,8 @@
+// Code for the App component
+// Import the React and ReactDOM libraries
+// this is just a simple example of how to create a component using React.createElement
+// and then render it to the DOM using ReactDOM.createRoot
+
 const Pet = (props) => {
   return React.createElement("div", {}, [
     React.createElement("h1", {}, props.name), // name
