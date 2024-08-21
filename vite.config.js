@@ -5,6 +5,6 @@ export default defineConfig({
   plugins: [react()],
   root: "src",
   build: {
-    outDir: 'public' // Change this to 'public'
+    outDir: 'dist' // Change this to 'public'
   }
 });
